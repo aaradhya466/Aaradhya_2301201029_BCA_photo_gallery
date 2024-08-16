@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photo Gallery</title>
+    <link rel="stylesheet" href="photo_gallery.css">
+</head>
+<body style="background-color: black;">
+   <header>
+    <h1 style="text-align: center; color: aliceblue; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><i><strong> PHOTO GALLERY</strong></i></h1>
+   </header>
+    <div class="gallery">
+        <div class="gallery-item" onclick="openPopup('https://www.w3schools.com/w3images/mountains.jpg')">
+            <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Nature 1">
+        </div>
+        <div class="gallery-item" onclick="openPopup('https://www.w3schools.com/w3images/forest.jpg')">
+            <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Nature 2">
+        </div>
+        <div class="gallery-item" onclick="openPopup('https://www.w3schools.com/w3images/lights.jpg')">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Nature 3">
+        </div>
+        <div class="gallery-item" onclick="openPopup('https://www.w3schools.com/w3images/snow.jpg')">
+            <img src="https://www.w3schools.com/w3images/snow.jpg" alt="Nature 4">
+        </div>
+        <div class="gallery-item" onclick="openPopup('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg')">
+            <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg" alt="Nature 5">
+        </div>
+        <div class="gallery-item" onclick="openPopup('https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg')">
+            <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg" alt="Nature 6">
+        </div>
+        <div class="gallery-item" onclick="openPopup('https://c4.wallpaperflare.com/wallpaper/431/451/684/the-most-beautiful-picture-of-nature-wallpaper-preview.jpg')">
+            <img src="https://c4.wallpaperflare.com/wallpaper/431/451/684/the-most-beautiful-picture-of-nature-wallpaper-preview.jpg" alt="Nature 7">
+        </div>
+        <div class="gallery-item" onclick="openPopup('https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_640.jpg')">
+            <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_640.jpg" alt="Nature 8">
+        </div>
+        <div class="gallery-item" onclick="openPopup('https://static.theprint.in/wp-content/uploads/2022/07/Untitled-design-10-1.jpg')">
+            <img src="https://static.theprint.in/wp-content/uploads/2022/07/Untitled-design-10-1.jpg" alt="Nature 9">
+        </div>
+        <div class="gallery-item" onclick="openPopup('https://images.squarespace-cdn.com/content/v1/61c4da8eb1b30a201b9669f2/1696691175374-MJY4VWB1KS8NU3DE3JK1/Sounds-of-Nature.jpg')">
+            <img src="https://images.squarespace-cdn.com/content/v1/61c4da8eb1b30a201b9669f2/1696691175374-MJY4VWB1KS8NU3DE3JK1/Sounds-of-Nature.jpg" alt="Nature 10">
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popup-image" src="" alt="Nature">
+    </div>
+
+    <script src="photo_gallery.js"></script>
+</body>
+</html>
+
